@@ -6,6 +6,6 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   format: ["cjs", "esm"],
-  dts: true, // Generate .d.ts declaration files
-  external: ["react", "react-dom"], // Externalize peer dependencies
+  dts: true,
+  external: ["react", "react-dom", "vue", "svelte"],
 });

@@ -9,7 +9,7 @@
     "build": "tsup",
     "test": "vitest",
     "lint": "eslint . --ext .ts,.tsx",
-    "prepare": "npm run build"
+    "prepare": "bun run build"
   },
   "peerDependencies": {
     "react": "^18.0.0",

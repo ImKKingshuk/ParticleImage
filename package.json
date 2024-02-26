@@ -1,5 +1,5 @@
 {
-  "name": "particle-image",
+  "name": "particleimage",
   "version": "1.0.0",
   "description": "A library for creating particle effects from images",
   "main": "dist/index.js",

@@ -6,10 +6,10 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "build:react": "tsup src/React/index.ts --format cjs,esm --dts --external Vue,Svelte",
+    "build:vue": "vite build --config vite.config.js",
+    "build:svelte": "rollup -c rollup.config.js",
     "build": "npm run build:react && npm run build:vue && npm run build:svelte",
-    "build:react": "tsup src/react/index.ts --format cjs,esm --dts --external vue,svelte",
-    "build:vue": "vite build --config vite.config.vue.js",
-    "build:svelte": "rollup -c rollup.config.svelte.js",
     "test": "vitest",
     "lint": "eslint . --ext .ts,.tsx,.vue,.svelte",
     "prepare": "npm run build"
